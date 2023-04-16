@@ -46,6 +46,7 @@ export class App extends React.Component {
             onNeutralClick={this.handleNeutralClick}
             onBadClick={this.handleBadClick}
           />
+
           <Statistics
             good={good}
             neutral={neutral}
