@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const Controls = ({ onGoodClick, onNeutralClick, onBadClick }) => {
+export const FeedbackOptions = ({
+  onGoodClick,
+  onNeutralClick,
+  onBadClick,
+}) => {
   return (
     <>
       <button type="button" onClick={onGoodClick}>
