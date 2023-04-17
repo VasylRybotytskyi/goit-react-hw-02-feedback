@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  ButtonBad,
+  ButtonGood,
+  ButtonNeutral,
+  FeedbackButton,
+} from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({
   onGoodClick,
@@ -6,16 +12,16 @@ export const FeedbackOptions = ({
   onBadClick,
 }) => {
   return (
-    <>
-      <button type="button" onClick={onGoodClick}>
+    <FeedbackButton>
+      <ButtonGood type="button" onClick={onGoodClick}>
         Good
-      </button>
-      <button type="button" onClick={onNeutralClick}>
+      </ButtonGood>
+      <ButtonNeutral type="button" onClick={onNeutralClick}>
         Neutral
-      </button>
-      <button type="button" onClick={onBadClick}>
+      </ButtonNeutral>
+      <ButtonBad type="button" onClick={onBadClick}>
         Bad
-      </button>
-    </>
+      </ButtonBad>
+    </FeedbackButton>
   );
 };

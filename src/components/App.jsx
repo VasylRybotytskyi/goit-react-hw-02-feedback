@@ -2,6 +2,7 @@ import React from 'react';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Section } from 'components/Section/Section';
 import { Statistics } from 'components/Statistics/Statistics';
+import { GlobalStyle } from './GlobalStyle';
 
 export class App extends React.Component {
   state = {
@@ -40,6 +41,7 @@ export class App extends React.Component {
 
     return (
       <>
+        <GlobalStyle />
         <Section title="Please leave feedback">
           <FeedbackOptions
             onGoodClick={this.handleGoodClick}
