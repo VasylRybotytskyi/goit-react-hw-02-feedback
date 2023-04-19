@@ -1,31 +1,25 @@
 import styled from 'styled-components';
 
-export const FeedbackButton = styled.div`
+export const FeedbackButtonWrapper = styled.div`
   display: flex;
   gap: 8px;
 `;
 
-export const ButtonGood = styled.button`
-  cursor: pointer;
-  border: none;
+export const FeedbackButton = styled.button`
+  text-align: center;
   border-radius: 5px;
-  &:hover {
-    border-color: rgb(0, 255, 0);
-  }
-`;
-export const ButtonNeutral = styled.button`
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  color: #333;
   cursor: pointer;
-  border: none;
-  border-radius: 5px;
+  transition: all 0.3s ease;
+
   &:hover {
-    border-color: rgb(255, 255, 102);
-  }
-`;
-export const ButtonBad = styled.button`
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  &:hover {
-    border-color: rgb(255, 0, 0);
+    background-color: #333;
+    color: white;
+    border-color: #333;
   }
 `;
