@@ -10,19 +10,11 @@ export class App extends React.Component {
     neutral: 0,
     bad: 0,
   };
-
-  handleGoodClick = () => {
-    this.setState(prevState => ({ good: prevState.good + 1 }));
+  //Функція яка приймає option та змінює state
+  handleClick = option => {
+    this.setState(prevState => ({ [option]: prevState[option] + 1 }));
   };
-
-  handleNeutralClick = () => {
-    this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-  };
-
-  handleBadClick = () => {
-    this.setState(prevState => ({ bad: prevState.bad + 1 }));
-  };
-
+  //Функція яка рахує загальну кільксть відгуків
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
@@ -44,9 +36,8 @@ export class App extends React.Component {
         <GlobalStyle />
         <Section title="Please leave feedback">
           <FeedbackOptions
-            onGoodClick={this.handleGoodClick}
-            onNeutralClick={this.handleNeutralClick}
-            onBadClick={this.handleBadClick}
+            onLeaveFeedback={this.handleClick}
+            options={['good', 'neutral', 'bad']}
           />
 
           <Statistics

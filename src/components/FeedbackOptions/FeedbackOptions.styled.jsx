@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-export const FeedbackButton = styled.button`
+export const FeedbackButton = styled.div`
   display: flex;
   gap: 8px;
-  border: none;
 `;
 
 export const ButtonGood = styled.button`
   cursor: pointer;
-
+  border: none;
   border-radius: 5px;
   &:hover {
     border-color: rgb(0, 255, 0);
@@ -16,6 +15,7 @@ export const ButtonGood = styled.button`
 `;
 export const ButtonNeutral = styled.button`
   cursor: pointer;
+  border: none;
   border-radius: 5px;
   &:hover {
     border-color: rgb(255, 255, 102);
@@ -23,7 +23,7 @@ export const ButtonNeutral = styled.button`
 `;
 export const ButtonBad = styled.button`
   cursor: pointer;
-
+  border: none;
   border-radius: 5px;
   &:hover {
     border-color: rgb(255, 0, 0);
