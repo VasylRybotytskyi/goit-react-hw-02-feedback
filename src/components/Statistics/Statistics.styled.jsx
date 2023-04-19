@@ -8,7 +8,6 @@ export const Feedback = styled.div`
   background-color: #fff;
   padding: 20px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  max-width: 17%;
 
   span:nth-child(n) {
     font-size: 18px;

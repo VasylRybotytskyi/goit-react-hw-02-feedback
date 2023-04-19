@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
+  text-align: center;
   margin-top: 20px;
 `;
 
